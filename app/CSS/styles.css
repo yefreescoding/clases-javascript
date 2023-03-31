@@ -90,12 +90,13 @@ header .nav-links > *{
     border: 3px solid var(--Dark-purple);
 }
 
-header .nav-links > *:hover {
+header .nav-links > *:is(:hover, :active) {
     transform: translate(-3px, -3px);
     background-color: var(--Pink-light);
     color: var(--Dark-purple);
     box-shadow: 3px 3px 0 var(--Dark-purple);
 }
+
 
 main {
     width: min(100% - 1rem, var(--container-max-width));
@@ -121,7 +122,7 @@ main .section-uno {
 
 main .section-uno h2 {
     font-family: var(--Special-font-rich);
-    font-size: 6rem;
+    font-size: 5rem;
     text-align: center;
     color: var(--Pink-red);
     text-shadow: 5px 8px 0 var(--Dark-purple);
