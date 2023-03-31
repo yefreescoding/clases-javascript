@@ -1,0 +1,201 @@
+:root {
+    --regular-font: 'Noto Sans JP', sans-serif;
+    --Special-font-rich: "JapanRich";
+    --Special-font-ramen: "JapanRamen";
+
+    --Pink-regular: #F28888;
+    --Pink-light: #f7d4c7;
+    --Pink-skin: #F2916D;
+    --Dark-purple: #141726;
+    --Pink-red: #F24150;
+
+    --container-max-width: 60rem;
+}
+
+@font-face {
+    font-family: JapanRich;
+    src: url(../../resources/fonts/japan-rich-font/misc/JapanRich-Regular-9362.woff);
+}
+@font-face {
+    font-family: JapanRamen;
+    src: url(../../resources/fonts/japan-ramenten-font/misc/Japan\ ramenten-b63e.woff);
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* outline: solid .5px grey; */
+}
+
+body {
+    background-color: var(--Pink-red);
+}
+
+img {
+    width: 100px;
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding: min(100% - 1rem, var(--container-max-width));
+    padding: .5rem 1.5rem;
+    margin-inline: auto;
+    flex-flow: column;
+    text-align: center;
+    background-color: var(--Pink-light);
+    font-family: var(--regular-font);
+    color: var(--Dark-purple);
+    border: var(--Dark-purple) solid 5px;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    line-height: 1em;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+@media (min-width: 50em){
+    header h1 {
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+}
+
+header .nav-links {
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+header .nav-links > *{
+    flex: 1;
+    padding: .5rem .8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Pink-light);
+    background-color: var(--Dark-purple);
+    transition: all .23s linear;
+    border: 3px solid var(--Dark-purple);
+}
+
+header .nav-links > *:hover {
+    transform: translate(-3px, -3px);
+    background-color: var(--Pink-light);
+    color: var(--Dark-purple);
+    box-shadow: 3px 3px 0 var(--Dark-purple);
+}
+
+main {
+    width: min(100% - 1rem, var(--container-max-width));
+    margin: 1rem auto;
+    /* height: 80dvh; */
+    /* align-items: center; */
+    /* place-items: center; */
+    background-color: var(--Pink-light);
+    border: var(--Dark-purple) solid 5px;
+    box-shadow: 3px 8px 0 var(--Dark-purple);
+
+    border-radius: 8px;
+}
+
+main .section-uno {
+    flex-flow: column;
+    gap: .5rem;
+    height: auto;
+    /* width: min(100% - 1rem, 40rem); */
+    /* height: 37rem; */
+    /* margin-inline: auto; */
+}
+
+main .section-uno h2 {
+    font-family: var(--Special-font-rich);
+    font-size: 6rem;
+    text-align: center;
+    color: var(--Pink-red);
+    text-shadow: 5px 8px 0 var(--Dark-purple);
+    border-bottom: var(--Dark-purple) 4px solid;
+}
+
+@media (min-width: 50em){
+    main .section-uno h2 {
+        font-size: 9.8rem;
+    }
+}
+
+.under-title-main {
+    font-family: var(--Special-font-rich);
+    justify-content: space-between;
+    margin-inline: auto;
+    width: min(100% - 1rem, 40rem);
+    font-size: 2rem;
+    color: var(--Dark-purple);
+}
+
+@media (min-width:50em) {
+    .under-title-main {
+        font-family: var(--Special-font-rich);
+        justify-content: space-between;
+        width: 40rem;
+        margin-inline: auto;
+        
+        font-size: 3rem;
+        color: var(--Dark-purple);
+    }
+}
+
+.img-contenedor {
+    flex-flow: column;
+    align-items: center;
+    width: min(100% - 1rem, 40rem);
+    margin: 0 auto;
+}
+
+.img-contenedor span {
+    font-family: var(--Special-font-ramen);
+    color: var(--Dark-purple);
+    text-shadow: 3px 6px 0 var(--Pink-red);
+    font-size: 2.6rem;
+    font-weight: 700;
+    flex: auto;
+}
+
+.img-contenedor img {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: var(--Dark-purple) 4px solid;
+}
+
+@media (min-width:50em) {
+    .img-contenedor span {
+        font-size: 5rem;
+    }
+}
+
+footer {
+    background-color: var(--Dark-purple);
+    color: var(--Pink-light);
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+@media (min-width:50em) {
+    footer {
+        font-size: 4rem;
+    }
+}
