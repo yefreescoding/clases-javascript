@@ -86,12 +86,12 @@ header .nav-links > *{
     font-weight: 700;
     color: var(--Pink-light);
     background-color: var(--Dark-purple);
-    transition: all .23s linear;
+    transition: all .15s ease-in;
     border: 3px solid var(--Dark-purple);
 }
 
 header .nav-links > *:is(:hover, :active) {
-    transform: translate(-3px, -3px);
+    transform: translate(-1.5px, -1.5px);
     background-color: var(--Pink-light);
     color: var(--Dark-purple);
     box-shadow: 3px 3px 0 var(--Dark-purple);
