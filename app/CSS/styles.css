@@ -122,11 +122,14 @@ main .section-uno {
 
 main .section-uno h2 {
     font-family: var(--Special-font-rich);
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     text-align: center;
     color: var(--Pink-red);
-    text-shadow: 5px 8px 0 var(--Dark-purple);
-    border-bottom: var(--Dark-purple) 4px solid;
+    text-shadow: 5px 6px 0 var(--Dark-purple);
+    /* border-bottom: var(--Dark-purple) 4px solid; */
+
+    transform: skew(0deg, 7deg);
+    -webkit-transform: skew(0deg, 7deg);
 }
 
 @media (min-width: 50em){
@@ -166,7 +169,7 @@ main .section-uno h2 {
 .img-contenedor span {
     font-family: var(--Special-font-ramen);
     color: var(--Dark-purple);
-    text-shadow: 3px 6px 0 var(--Pink-red);
+    text-shadow: 1px 5px 0 var(--Pink-red);
     font-size: 2.6rem;
     font-weight: 700;
     flex: auto;
