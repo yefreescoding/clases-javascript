@@ -188,6 +188,8 @@ main .section-uno h2 {
 }
 
 footer {
+    position: relative;
+    inset: auto 0 0 0;
     background-color: var(--Dark-purple);
     color: var(--Pink-light);
     text-align: center;
